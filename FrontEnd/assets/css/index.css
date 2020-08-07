@@ -1,0 +1,80 @@
+body {
+    background-color:rgb(241,244,246);
+}
+div {
+  position:relative;
+  margin:0 0 .6rem;
+}
+.card-title {
+  margin-bottom:.75rem;
+  text-transform:uppercase;
+  color:rgba(13,27,62,0.7);
+  font-weight:bold;
+  font-size:.88rem
+}
+.divider{
+   margin-top: 30px;
+   margin-bottom:1.5rem;
+   height:1px;
+   overflow:hidden;
+   background:#e9ecef;
+  box-shadow:0 0.46875rem 2.1875rem rgba(4,9,20,0.03),0 0.9375rem 1.40625rem rgba(4,9,20,0.03),0 0.25rem 0.53125rem rgba(4,9,20,0.05),0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+ }
+.card{
+  flex:1 0 0%;
+  margin-bottom:1rem;
+  box-shadow:0 0.46875rem 2.1875rem rgba(4,9,20,0.03),0 0.9375rem 1.40625rem rgba(4,9,20,0.03),0 0.25rem 0.53125rem rgba(4,9,20,0.05),0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+}
+.widget-subheading {
+  font-size: 0.88rem;
+  color: #b1b5b7;
+}
+.app-header__content {
+  display:flex;
+  align-items:center;
+  align-content:center;
+  flex:1;
+  padding:0 1.5rem;
+  height:60px;
+}
+.app-header .app-header__content .header-menu .nav-link {
+  color:#6c757d;
+}
+.app-header .app-header__content .header-menu .nav-link i {
+  color:#adb5bd;
+}
+.app-header .app-header__content .header-menu .nav-link:hover {
+  color:#212529;
+}
+.app-header__logo {
+  padding:0 1.5rem;
+  height:60px;
+  width:280px;
+  display:flex;
+  align-items:center;
+  transition:width .2s;
+  color:#0d1b3eb3;
+}
+.app-header.header-shadow {
+  box-shadow:0 0.46875rem 2.1875rem rgba(4,9,20,0.03),0 0.9375rem 1.40625rem rgba(4,9,20,0.03),0 0.25rem 0.53125rem rgba(4,9,20,0.05),0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+  background-color: #fafbfc;
+  margin-bottom: 30px;
+  display: flex;
+  height: 3.4375rem;
+}
+.app-header .app-header__content .app-header-right {
+  align-items:center;
+  display:flex;
+  margin-left:auto;
+}
+.app-header .app-header__content .app-header-left {
+  display:flex;
+  align-items:center;
+}
+.table-responsive {
+  display:block;
+  width:100%;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  -ms-overflow-style:-ms-autohiding-scrollbar;
+}

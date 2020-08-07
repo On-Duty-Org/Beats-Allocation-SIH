@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light app-header header-shadow">
+      <a class="navbar-brand font-weight-bold text-secondary" href="index.html">
+        <img class="navbar-brand" src="./assets/images/logo.png" height="40" alt="">
+        Onduty</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-danger" href="fly.html"><i class="fa fa-exclamation-triangle"
+                aria-hidden="true"></i>&nbsp<strong>Alerts</strong></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link font-weight-bold text-secondary" href="http://aman28.pythonanywhere.com"><i
+                class="nav-link-icon fa fa-id-card-o"></i>&nbspAdmin Dashboard</a>
+          </li>&nbsp;
+        </ul>
+        <br>
+        <div style="margin-top: 29px;" id="google_translate_element"></div>
+      </div>
+    </nav>
+    <!-- Marquee tag to be fetched from database later -->
+    <h5 class='font-weight-bold text-danger'>Alert</h5>
+    <marquee style='color:crimson'>1 critical zone not alloted for any police. 4 important alerts pending for the police
+      response. 3 police groups not deployed anywhere </marquee>
+    <br>
+    <!-- End of Marquee tags -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">On Duty</h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="./assets/images/stakeout.png" alt="">
+                </div>
+                <div class="col-sm-6">
+                  <h4 class="widget-numbers text-success" id="onduty-live"></h4>
+                </div>
+              </div>
+              <p class="card-text widget-subheading">List of police groups successfully alloted to their respective
+                zones.</p>
+              <a href="#" class="mb-2 mr-2 btn-transition btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Zone Status</h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="./assets/images/nearby.png" alt="">
+                </div>
+                <div class="col-sm-6">
+                  <h4 class="widget-numbers text-primary" id="zone-alloted-live"></h4>
+                </div>
+              </div>
+              <p class="card-text widget-subheading">List of zones where police have been deployed successfully</p>
+              <a href="#" class="mb-2 mr-2 btn-transition btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Unalloted Zones</h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="./assets/images/toxic.png" alt="">
+                </div>
+                <div class="col-sm-6">
+                  <h4 id="zone-na-live" class="widget-numbers text-warning"></h4>
+                </div>
+              </div>
+              <p class="card-text widget-subheading">List of zones not occupied for patrol by any police</p>
+              <a href="#" class="mb-2 mr-2 btn-transition btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider mt-0" style="margin-bottom: 30px;"></div>
+    </div>
+
+    <div class="container">
+      <div class="col-md-12">
+        <div class="main-card mb-3 card">
+          <div class="card-body table-responsive">
+            <h5 class="card-title">Active Police Info</h5>
+            <table class="mb-0 table table-striped">
+              <thead>
+                <tr>
+                  <th>Allotment Id </th>
+                  <th>Alloted Zone</th>
+                  <th>Police Alloted</th>
+                  <th>Time posted</th>
+                  <th>From</th>
+                  <th>To</th>
+                </tr>
+              </thead>
+              <tbody id="allocation">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+</body>
+<script src="assets/js/index.js"></script>
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+  }
+</script>
+
+</html>

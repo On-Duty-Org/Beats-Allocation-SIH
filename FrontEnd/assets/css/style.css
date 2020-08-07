@@ -1,0 +1,153 @@
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #F6F8FA;
+  }
+  
+  :root {
+    font-size: 14px;
+  }
+  
+  body {
+    font-family: "Google Sans", sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+    font-weight: normal;
+    letter-spacing: -.3px;
+  }
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #272822;
+  font-family: "Google Sans", sans-serif;
+  font-weight: 700;
+}
+/* Making table scalable on phone */
+table, th, td {
+  border: 1px solid Black;}
+  
+  /* make the table a 100% wide by default */
+  table {
+  width: 100%;}
+  
+  /* if the browser window is at least 800px-s wide: */
+  @media screen and (min-width: 800px) {
+    table {
+    width: 90%;}
+  }
+  
+  /* if the browser window is at least 1000px-s wide: */
+  @media screen and (min-width: 1000px) {
+    table {
+    width: 80%;}
+  }
+h2{
+  font-size: 25px
+}
+h1 {
+  line-height: 32px;
+}
+h2, .h2 {
+  line-height: 1.44;
+}
+h3{
+  text-align: center;
+}
+p {
+  font-size: 14px;
+  line-height: 22px;
+}
+.card{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+table{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+p{
+  margin-left: 30px;
+  color:white;
+  font-size: 14px;
+}
+#google_translate_element {
+  margin-top: 30px !important;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: -15px;
+  left: 0;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 2px;
+  margin-top: 63px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 22px;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+li{
+  cursor: pointer;
+}
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+  margin: 10px 10px 0 0;
+  float: right;
+  position: relative;
+  top: 67px;
+  right: 20px;
+  
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.marker {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+
+#marker {
+  background-image: url('https://thumbs.gfycat.com/DelayedVacantDassie-size_restricted.gif');
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  border-radius: 0%;
+  cursor: pointer;
+}
+#menu {
+  position: relative;
+  bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
