@@ -13,11 +13,11 @@ In police terminology, a beat is the territory and time that a police officer pa
 
 ### Screenshots
 ### Interactive map to manage alert
-![Maps](/FrontEnd/screenshots/1.png?raw=true "Optional Title")
+![Maps](/Frontend/screenshots/1.png?raw=true "Optional Title")
 ### Settings to allocate new zones and police on map
-![Dashboard](FrontEnd/screenshots/2.png?raw=true "Optional Title")
+![Dashboard](Frontend/screenshots/2.png?raw=true "Optional Title")
 ### Beats Overview
-![Allot Beats](FrontEnd/screenshots/3.png?raw=true "Optional Title")
+![Allot Beats](Frontend/screenshots/3.png?raw=true "Optional Title")
 
 ## Our priorities while building this application
 - Accessible by all states - Our architecture provides a customizable and flexible approach which can adapt to any state’s unique requirements
