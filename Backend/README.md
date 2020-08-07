@@ -6,7 +6,7 @@ Technology Stack:
 - Corsheaders
 - Bootstrap and JS for frontend purposes
 
-### Contains the Restful API's for Beats Allocation, and also to handle the admin page of the app
+#### Contains the Restful API's for Beats Allocation, and also to handle the admin page of the app
 Django Rest Framework is used for the same.
 
 The API can be viewed on : http://aman28.pythonanywhere.com/
