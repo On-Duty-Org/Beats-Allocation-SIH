@@ -28,8 +28,8 @@ In police terminology, a beat is the territory and time that a police officer pa
 - Easily extensible by NCRB developers for further development
 ## Authors
 - [Aman Bhatnagar](https://github.com/amyy28) (Backend + REST APIs)
-- Ishank Sharma (Connected Django REST-APIs with MapBox + Firebase) 
-- Kritika (Styled the index page components)
+- [Ishank Sharma](https://github.com/ishank-dev) (Connected Django REST-APIs with MapBox + Firebase) 
+- [Kritika Choudhary](https://github.com/KritikaChoudhary) (Styled the index page components)
 
 ## TechStack
 - Django Rest Framework
