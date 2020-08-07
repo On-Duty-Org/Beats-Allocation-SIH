@@ -9,15 +9,20 @@ In police terminology, a beat is the territory and time that a police officer pa
 3. If the police officer has internet connectivity, he can get directions about how he has to navigate to a specific place.
 4. The police can send live alerts that gets displayed on the same map marked as a pulsing dot to alert other police officers.
 5. Zones and police are customisable and can be used by different police stations matching their unique requirements.
+### Technical Workflow
+The frontend interacts with the REST-APIs and displays them on map.
 
 
-### Screenshots
 ### Interactive map to manage alert
+#### Map Legend
+- Moving Siren: Location of police patrols
+- Pulsing Dot: Live alert location
+### Screenshots
 ![Maps](/Frontend/screenshots/1.png?raw=true "Optional Title")
 ### Settings to allocate new zones and police on map
-![Dashboard](Frontend/screenshots/2.png?raw=true "Optional Title")
+![Dashboard](/Frontend/screenshots/2.png?raw=true "Optional Title")
 ### Beats Overview
-![Allot Beats](Frontend/screenshots/3.png?raw=true "Optional Title")
+![Allot Beats](/Frontend/screenshots/3.png?raw=true "Optional Title")
 
 ## Our priorities while building this application
 - Accessible by all states - Our architecture provides a customizable and flexible approach which can adapt to any state’s unique requirements
@@ -33,5 +38,5 @@ In police terminology, a beat is the territory and time that a police officer pa
 
 ## TechStack
 - Django Rest Framework
-- Mapbox APIs
+- [Mapbox APIs](https://www.mapbox.com/)
 - HTML, CSS, JavaScript
