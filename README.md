@@ -27,7 +27,7 @@ In police terminology, a beat is the territory and time that a police officer pa
 - Decoupled architecture that can be added as a layer on top of CCTNS
 - Easily extensible by NCRB developers for further development
 ## Authors
-- Aman Bhatnagar (Backend + REST APIs)
+- [Aman Bhatnagar](https://github.com/amyy28) (Backend + REST APIs)
 - Ishank Sharma (Connected Django REST-APIs with MapBox + Firebase) 
 - Kritika (Styled the index page components)
 
