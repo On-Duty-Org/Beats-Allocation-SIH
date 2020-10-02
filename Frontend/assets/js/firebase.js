@@ -1,3 +1,17 @@
+var firebaseConfig = {
+      apiKey: "FIREBASE Credentials HERE",
+      authDomain: "FIREBASE Credentials HERE",
+      databaseURL: "FIREBASE Credentials HERE",
+      projectId: "FIREBASE Credentials HERE",
+      storageBucket: "FIREBASE Credentials HERE",
+      messagingSenderId: "FIREBASE Credentials HERE",
+      appId: "FIREBASE Credentials HERE",
+      measurementId: "FIREBASE Credentials HERE"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    var db = firebase.firestore();
 const alertList = document.querySelector('.alerts');
 
 // function to set attributes for different elements
