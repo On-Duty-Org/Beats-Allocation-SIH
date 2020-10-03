@@ -2,7 +2,9 @@
 ## Beats Allocation and Tracking
 In police terminology, a beat is the territory and time that a police officer patrols
 ### Live Demo
-[See the live demo here](https://ishank-dev.github.io/Beats-Allocation-SIH/fly.html)
+[Try the live demo](https://ishank-dev.github.io/Beats-Allocation-SIH/fly.html)
+or
+[Check out the demo video](https://www.youtube.com/watch?v=k2JGzIc8_ls)
 ### Workflow
 1. The police officers are assigned their zones via the admin dashboard.
 2. An SMS is sent along with the place details the area is also marked on the map that needs to be patrolled. 
