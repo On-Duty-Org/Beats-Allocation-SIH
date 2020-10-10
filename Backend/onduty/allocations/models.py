@@ -14,7 +14,8 @@ class allocations(models.Model):
 
     zone = models.ForeignKey(zones, on_delete=models.CASCADE)
     police = models.ForeignKey(polices, on_delete=models.CASCADE)
-    date_posted = models.DateTimeField(default=timezone.now)
+    date_posted = models.DateTimeField(auto_now_add=True)
+    date_updated = models.DateTimeField(auto_now=True)
     start_time = models.TimeField()
     end_time = models.TimeField()
     date = models.DateField()
