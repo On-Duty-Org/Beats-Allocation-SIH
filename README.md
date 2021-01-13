@@ -34,11 +34,11 @@ The frontend interacts with the REST-APIs and displays them on map.
 - Decoupled architecture that can be added as a layer on top of CCTNS
 - Easily extensible by NCRB developers for further development
 ## Authors
-- [Ishank Sharma](https://github.com/ishank-dev) (Connected Django REST-APIs with MapBox + Firebase) 
+- [Ishank Sharma](https://github.com/ishank-dev) (Connected Django REST-APIs with MapBox + Firebase + Dom Manipulation to create entities on the frontend) 
 - [Aman Bhatnagar](https://github.com/amyy28) (Backend + REST APIs)
 - [Kritika Choudhary](https://github.com/KritikaChoudhary) (Styled the index page components)
 
 ## TechStack
 - Django Rest Framework
 - [Mapbox APIs](https://www.mapbox.com/)
-- HTML, CSS, JavaScript
+- HTML, CSS, JavaScript for front-end
