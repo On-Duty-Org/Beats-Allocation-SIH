@@ -192,7 +192,7 @@ async function renderAlert(doc) {
     });
 }
 // Function that iterates over firebase
-var docRef = db.collection('Emergency Mode').get().then((snapshot) => {
+let docRef = db.collection('Emergency Mode').get().then((snapshot) => {
 
     snapshot.docs.forEach(doc => {
         renderAlert(doc);
