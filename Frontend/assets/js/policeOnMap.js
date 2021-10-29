@@ -8,7 +8,7 @@ async function forwardGeocoding(place) {
 
 async function getZones() {
     let response = await fetch("https://aman28.pythonanywhere.com/allocation");
-    let data = await response.json()
+    const data = await response.json()
     data.forEach(async u => {
         //fetch name from coordinates of alloted beats
         let allocate = await forwardGeocoding(u.zone_name);
